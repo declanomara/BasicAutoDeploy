@@ -1,0 +1,11 @@
+[Unit]
+Description=Basic Auto Deploy
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/share/BasicAutoDeploy/run.sh
+
+[Install]
+WantedBy=multi-user.target
